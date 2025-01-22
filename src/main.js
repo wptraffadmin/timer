@@ -36,9 +36,7 @@ function startTimer() {
         clearInterval(timerInterval);
         isRunning = false;
         updatePlayPauseIcon('play'); // Змінюємо іконку на старт після завершення
-        alertSound.play()
-  .then(() => console.log('Audio playing'))
-  .catch(error => console.error('Error playing audio:', error));
+          alertSound.play();
       }
     }, 1000);
   }
