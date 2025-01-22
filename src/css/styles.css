@@ -60,11 +60,6 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-/* Для Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
 button {
     all: unset;
     /* Скидає всі стандартні стилі кнопки */
