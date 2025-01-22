@@ -9,7 +9,7 @@ const minutesInput = document.getElementById('minutesInput');
 const secondsInput = document.getElementById('secondsInput');
 const fullscreenToggleButton = document.getElementById('fullscreen-toggle');
 
-const alertSound = new Audio('./audio/dragon-roar-high-intensity-36564.mp3');
+const alertSound = new Audio('audio/dragon-roar-high-intensity-36564.mp3');
 
 function updateTimerDisplay() {
   const hours = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
