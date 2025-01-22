@@ -9,7 +9,7 @@ const minutesInput = document.getElementById('minutesInput');
 const secondsInput = document.getElementById('secondsInput');
 const fullscreenToggleButton = document.getElementById('fullscreen-toggle');
 
-const alertSound = new Audio('audio/dragon.wav');
+const alertSound = new Audio('./audio/dragon.wav');
 
 function updateTimerDisplay() {
   const hours = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
@@ -36,8 +36,10 @@ function startTimer() {
         clearInterval(timerInterval);
         isRunning = false;
         updatePlayPauseIcon('play'); // Змінюємо іконку на старт після завершення
-          alertSound.play();
-      }
+          alertSound.play()
+            .then(() => console.log('Audio playing successfully'))
+            .catch(error => console.error('Error playing audio:', error));
+        }
     }, 1000);
   }
 }
