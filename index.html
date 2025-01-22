@@ -4,14 +4,51 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/timer/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Readlis Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/timer/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/timer/assets/index-B_SY1GJM.css">
+    <link rel="stylesheet" crossorigin href="/timer/assets/index-bDsygo8V.css">
   </head>
   <body>
-    <main>
-      <div>zdcgmvh,bj.nkl,</div>
-    </main>
+    <div class="container">
+      <button class="fullscrean" id="fullscreenToggle">
+        <img
+          id="fullscreenIcon"
+          width="43"
+          height="43"
+          src="https://img.icons8.com/fluency-systems-regular/48/fullscreen.png"
+          alt="Fullscreen Icon"
+        />
+      </button>
+      <div class="time">
+        <input type="number" id="hoursInput" min="0" />
+        <input type="number" id="minutesInput" min="0" />
+        <input type="number" id="secondsInput" min="0" />
+      </div>
+      <div class="button-container">
+        <button id="playPause">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios/50/play--v1.png"
+            alt="play--v1"
+          />
+        </button>
+        <button id="reset">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios/50/stop.png"
+            alt="stop"
+          />
+        </button>
+      </div>
+    </div>
 
   </body>
 </html>
