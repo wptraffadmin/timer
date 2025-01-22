@@ -1,18 +1,23 @@
 {
   "name": "timer",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build  --base=/timer/",
+    "build": "vite build --base=/timer/",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.0.5",
-    "vite-plugin-html-inject": "^1.1.2"
+    "glob": "^11.0.0",
+    "postcss": "^8.4.41",
+    "postcss-sort-media-queries": "^5.2.0",
+    "vite": "^5.4.6"
   },
+  "author": "wptraffadmin <wptraffadmin@gmail.com>",
+  "license": "ISC",
   "dependencies": {
-    "glob": "^11.0.1"
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
